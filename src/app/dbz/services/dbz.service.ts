@@ -28,13 +28,19 @@ export class DbzService {
  // onDelete = Index value: number;
 
   onNewCharacter(character:Character): void{
-    this.characters.push(character);
+
+    const newCharacter: Character = { id: uuid(), ...character}
+
+    this.characters.push(newCharacter);
   }
 
-  onDeleteCharacter(index:number){
+  //onDeleteCharacter(index:number){
 
     //this.characters.splice(1,2)
-    this.characters.splice(index,1);
+    //this.characters.splice(index,1);
+
+   deleteCharacterById(id:string){
+    this.characters = this.characters.filter(character => character.id !== id);
   }
 
 }
