@@ -27,7 +27,7 @@ export class DbzService {
 
  // onDelete = Index value: number;
 
-  onNewCharacter(character:Character): void{
+  addCharacter(character:Character): void{
 
     const newCharacter: Character = { id: uuid(), ...character}
 
