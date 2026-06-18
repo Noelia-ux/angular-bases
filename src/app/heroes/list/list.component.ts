@@ -14,7 +14,7 @@ export class ListComponent {
 removeLastHero():void{
   //Si quiero que mi variable viva a los largo de toda mi clase, tengo que crearla como una propiedad
   this.deletedHero= this.heronames.pop();
-   //console.log({ deletedHero })//Para ver claramente qué estamos borrando
+  //console.log({ deletedHero })//Para ver claramente qué estamos borrando
   }
 
   }

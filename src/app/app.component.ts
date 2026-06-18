@@ -1,19 +1,20 @@
 import { Component, numberAttribute } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-root',//identificador del componente
+  templateUrl: './app.component.html', //interfaz del componente
+  styleUrl: './app.component.css'// estilo interfaz
 })
 export class AppComponent {
   public title: string = 'Hola Mundo';
-  /*public counter = 10;
 
- increaseBy(value: number):void{
+  public counter: number = 10;
+
+increaseBy(value: number):void{
     this.counter += value;
   }
 
-  decrementBy(value: number):void{
+decrementBy(value: number):void{
     this.counter -= value;
   }
 
@@ -22,5 +23,5 @@ export class AppComponent {
   reset(): void{
     this.counter =10;
 
-  }*/
+  }
 }

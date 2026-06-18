@@ -1,12 +1,12 @@
 <h3>Listado de Héroes </h3>
 
-<div *ngIf="deletedHero; else nothingWasDeleted">
+<div *ngIf="deletedHero; else nadaqueborrar">
   <h3>Héroe borrado <small class="text-danger">{{ deletedHero }}</small></h3>
 </div>
 
 <!-- Lo que estamos haciendo en el ng-template es uns
  referencia local-->
-<ng-template #nothingWasDeleted>
+<ng-template #nadaqueborrar>
   <h3>No ha borrado nada</h3>
 </ng-template>
 

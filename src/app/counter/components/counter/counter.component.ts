@@ -13,7 +13,6 @@ import { Component, OnInit } from '@angular/core';
 <button (click)="reset()">Reset</button>
 
 `
-
 })
 
 export class CounterComponent {
